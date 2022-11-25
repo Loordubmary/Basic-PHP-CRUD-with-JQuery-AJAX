@@ -1,0 +1,197 @@
+.main-container {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+.form-container {
+    display: none;
+}
+
+.crud-list-container {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 30px 20px;
+}
+
+.form-container {
+    width: 600px;
+    margin: auto;
+    padding: 10px 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.form-container {}
+
+#crud_form .form-field label {
+    display: block;
+    font-size: 24px;
+    margin: 15px 0px;
+}
+
+#crud_form .form-field label, #crud_form .form-field input, #crud_form .form-field textarea {
+    width: 100%;
+}
+
+#crud_form .form-field input#f_title,
+#crud_form .form-field textarea#f_description {
+    padding: 8px 12px;
+    font-size: 18px;
+    border: 1.5px solid #cacbcd;
+}
+
+.error-fields {
+    border: 1.5px solid #f81c1c !important;
+}
+
+input#f_media.error-fields-media {
+    color: #f81c1c;
+}
+
+span.required {
+    color: red;
+}
+
+.form-container .form-head {
+    font-size: 34px;
+    font-weight: 800;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+body {
+    background: url("./images/bg.jpg") no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+button#form-submit, button#form-cancel {
+    padding: 7px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #f5f9fa;
+    border: 1.5px solid #cacbcd;
+    margin: 35px 0px 10px;
+}
+
+button#form-submit:disabled {
+    padding: 0px 40px;
+}
+
+#form-submit img.loader-gif {
+    width: 45px;
+    position: relative;
+    animation: loaderSpin 5s linear infinite;
+}
+
+@-moz-keyframes loaderSpin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes loaderSpin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes loaderSpin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+
+.crud-list-container .list-container .list-items {
+    display: grid;
+    grid-template-columns: 3fr 6fr 2fr;
+    margin: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    justify-items: start;
+    align-items: center;
+}
+
+.crud-list-container .list-container .list-items img {
+    width: 100%;
+}
+
+.crud-list-container .list-container .list-items .post-content {
+    padding: 10px 20px 10px 20px;
+}
+
+.crud-list-container .list-container .list-items .post-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.crud-list-container .list-head {
+    font-size: 34px;
+    font-weight: 800;
+    margin: 15px 30px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.crud-list-container .list-container .list-items .post-content p.post-title {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.crud-list-container .list-container .list-items .post-content p.post-desc {
+    font-size: 18px;
+}
+
+.crud-list-container .list-container .list-items .post-actions .post-edit, .crud-list-container .list-container .list-items .post-actions .post-delete {
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.crud-list-container .list-head .add_new_btn {
+    text-align: end;
+    background: #7fffd4;
+    width: fit-content;
+    margin-left: auto;
+    padding: 10px 24px;
+    font-size: 20px;
+    box-shadow: rgb(127 255 212 / 40%) 0px 0px 0px 2px, rgb(127 255 212 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset;
+    cursor: pointer;
+}
+
+.image_preview{
+    display: none;
+}
+
+.crud-list-container .list-head .add_new_btn:hover {
+    background: #4ea789;
+    color: #fff;
+}
+
+.form-field.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button#form-submit {
+    background-color: #64ebc3;
+    border: 2px solid #03eda7;
+}
+
+button#form-submit:hover {
+    background-color: #389378;
+    border: 2px solid #2f7460;
+    color: #fff;
+}
+
+button#form-cancel:hover {
+    background-color: #cacbcd;
+}
+
+input#f_media_src {
+    height: 150px;
+    max-width: 190px;
+    margin-top: 20px;
+    border: 2px solid #dbe0e4;
+}
+
+.crud-list-container .list-container .no-records {
+    padding: 40px 37px;
+    font-size: 20px;
+}
